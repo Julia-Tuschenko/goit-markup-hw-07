@@ -1,4 +1,34 @@
-@import url(./utils/_variebles.scss);
-@import url(./base/_common.scss);
-@import url(./base/_container.scss);
-@import url(./utils/_visually-hidden.scss);
+//UTILS
+@import "./utils/variebles";
+@import "./utils/visually-hidden";
+
+
+//BASE
+@import "./base/common";
+@import "./base/container";
+
+//COMPONENTS
+@import "./components/modal-backdrop";
+@import "./components/logo";
+@import "./components/social-list";
+@import "./components/portfolio-button";
+
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/modal-window";
+@import "./layout/modal-form";
+@import "./layout/hero";
+@import "./layout/out-worc";
+@import "./layout/quelity";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/join";
+@import "./layout/footer";
+@import "./layout/footer-form";
+@import "./layout/portfolio-offers";
+@import "./layout/portfolio-cards";
+
+
+
+
