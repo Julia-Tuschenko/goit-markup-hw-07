@@ -5,9 +5,7 @@
 .form-title{
     margin-bottom: 20px;
     font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include fond ();
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -28,27 +26,24 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: var(--primary-bg-color);
-}
 
-.footer-input:focus{
-    outline: none;
-    border-color: var(--primary-bg-color);
-    background-color: transparent;
-    color: var(--primary-bg-color);
-
+    &:focus{
+        outline: none;
+        border-color: var(--primary-bg-color);
+        background-color: transparent;
+        color: var(--primary-bg-color);
+    
+    }
 }
 
 .subscribe{
     width: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    @include padding (10px, 10px);
     padding-left: 29px;
     margin-left: 12px;
 
     font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
+    @include fond ($fw, 16px, 1.87);
     color: var(--primary-bg-color);
 
     display: flex;
@@ -61,9 +56,11 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-color: transparent;
+
+    &__icon{
+        fill: var(--primary-bg-color);
+        margin: auto;
+    }
+    
 }
 
-.subscribe-icon{
-    fill: var(--primary-bg-color);
-    margin: auto;
-}

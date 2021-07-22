@@ -21,11 +21,13 @@
     border-radius: 50%;
     background-color: var(--primary-bg-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:focus .modal-icon{
+        fill: var(--accent-color);
+    }
+    
 }
 
-.modal-button:focus .modal-icon{
-    fill: var(--accent-color);
-}
 
 .modal-icon{
     text-align: center;

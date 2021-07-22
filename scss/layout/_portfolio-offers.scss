@@ -1,15 +1,19 @@
 .offers{
     padding-top: 94px;
     margin-bottom: 50px;
+
+    &__list{
+        display: flex;
+        justify-content: center;
+    }
+
+    & :not(:last-child){
+        margin-right: 8px;
+    }
+      
+    
 }
 
-.offers-list{
-    display: flex;
-    justify-content: center;
-}
 
-.offer-item:not(:last-child){
-    margin-right: 8px;
-}
-  
+
 
