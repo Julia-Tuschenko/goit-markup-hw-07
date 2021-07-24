@@ -13,14 +13,14 @@
     font-size: 14px;
     letter-spacing: 0.03em;
 
-    &__item {
+    &--item {
         margin-top:  30px;
         margin-left: 30px;
         width: 270px;
         
     }
 
-    &__title{
+    &--title{
         margin-bottom: 10px;
         @include fond;
         text-transform: uppercase;
@@ -28,11 +28,11 @@
         color: var(--title-text-colot);
     }
 
-    &__description{
+    &--description{
         line-height: 1.71;
     }
 
-    &__container{
+    &--container{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -45,7 +45,7 @@
         border-radius: 4px;
     }
 
-    &__icon{
+    &--icon{
         width: 70px;
         height: 70px;
     }

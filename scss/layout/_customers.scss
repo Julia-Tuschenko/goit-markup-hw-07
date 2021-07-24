@@ -1,8 +1,8 @@
 .customers{
     @include padding ();
-}
 
-.customers-title{
+    
+&__title{
     @include fond ($fw, 36px, 1.17);
     text-align: center;
     letter-spacing: 0.03em;
@@ -12,23 +12,22 @@
     color: var(--title-text-colot);
 }
 
-.customers-list{
+&__list{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.customers-item{
+&__item{
     width: 170px;
     height: 92px;
 
     &:not(:last-child){
         margin-right: 30px;
-    
     }
 }
 
-.customers-list-link{
+&__link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,5 +48,7 @@
         fill: var(--accent-color);
         border:1px solid var(--accent-color);
     }
+}
+
 }
 
